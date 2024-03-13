@@ -1,0 +1,31 @@
+/* Dodatkowe style dla nagłówka */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Dodatkowe style dla logo */
+header img {
+    max-width: 200px;
+}
+
+/* Dodatkowe style dla nawigacji */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
