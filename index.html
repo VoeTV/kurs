@@ -8,9 +8,9 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('https://c0.wallpaperflare.com/preview/262/398/473/empty-train-trail.jpg'); /* Dodanie tła z tory kolejowe */
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-image: url('https://c0.wallpaperflare.com/preview/262/398/473/empty-train-trail.jpg');
+            background-size: cover; /* Rozciągnięcie obrazu na całe tło */
+            background-attachment: fixed; /* Obraz będzie nieruchomy, gdy użytkownik przewija stronę */
             font-family: Arial, sans-serif;
         }
 
@@ -18,7 +18,7 @@
             width: 80%;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Dodanie koloru tła z przezroczystością */
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -42,7 +42,6 @@
             margin: 10px auto;
         }
 
-        /* Dodatkowe style dla nawigacji */
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -62,11 +61,17 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-size: 100% auto; /* Obraz będzie pełną szerokością, ale zachowa proporcje */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/PKP.svg/1280px-PKP.svg.png" alt="Logo PKP">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/PKP.svg" alt="Logo PKP">
     </header>
     <div class="container">
         <h1>Materiały Szkoleniowe dla Automatyka PKP</h1>
@@ -79,4 +84,4 @@
         </nav>
     </div>
 </body>
-    </html>
+</html>
