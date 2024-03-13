@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Lecha Kaczyńskiego</title>
+    <style>
+        /* Dodatkowe style dla obrazka */
+        #kaczynski-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
+        /* Dodatkowe style dla cytatu */
+        #quote {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generator Lecha Kaczyńskiego</h1>
+    <img id="kaczynski-image" src="" alt="Lech Kaczyński">
+    <p id="quote"></p>
+
+    <script>
+        // Tablica z nazwami plików obrazków Lecha Kaczyńskiego
+        var kaczynskiImages = [
+            "kaczynski1.jpg",
+            "kaczynski2.jpg",
+            "kaczynski3.jpg"
+            // Dodaj więcej nazw plików obrazków
+        ];
+
+        // Tablica z dostępnymi cytatami
+        var kaczynskiQuotes = [
+            "Jakim Lechem dzisiaj jesteś?",
+            "Czy jesteś gotowy na zmiany?",
+            "Wszystko jest możliwe!"
+            // Dodaj więcej cytatów
+        ];
+
+        // Losowanie indeksów dla obrazka i cytatu
+        var imageIndex = Math.floor(Math.random() * kaczynskiImages.length);
+        var quoteIndex = Math.floor(Math.random() * kaczynskiQuotes.length);
+
+        // Ustawienie wylosowanego obrazka i cytatu na stronie
+        document.getElementById("kaczynski-image").src = kaczynskiImages[imageIndex];
+        document.getElementById("quote").textContent = kaczynskiQuotes[quoteIndex];
+    </script>
+</body>
+</html>
